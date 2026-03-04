@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ISMAEL AGAO - Professional Civil & Structural Engineer specializing in structural design, project management, and infrastructure development.">
+    <meta name="keywords" content="Civil Engineer, Structural Engineer, Structural Design, Construction, Project Management, Kenya Engineer">
+    <meta name="author" content="ISMAEL AGAO">
+    <title>ISMAEL AGAO | Civil & Structural Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #1e293b; }
+        header { background: rgba(15, 23, 42, 0.95); color: white; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000; backdrop-filter: blur(10px); }
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: #38bdf8; }
+        section { padding: 100px 0; }
+        .hero { background: linear-gradient(to right, #0f172a, #1e293b); color: white; text-align: center; padding-top: 150px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; animation: fadeDown 1s ease-in-out; }
+        .hero p { font-size: 1.2rem; margin-bottom: 25px; animation: fadeUp 1.2s ease-in-out; }
+        .btn { display: inline-block; padding: 12px 25px; background: #38bdf8; color: white; border-radius: 30px; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .btn:hover { background: #0ea5e9; transform: translateY(-3px); }
+        h2 { text-align: center; margin-bottom: 50px; font-size: 2.2rem; position: relative; }
+        h2::after { content: ""; width: 60px; height: 4px; background: #38bdf8; display: block; margin: 10px auto; border-radius: 5px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: #f8fafc; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+        form { max-width: 600px; margin: auto; }
+        form input, form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #cbd5e1; font-family: inherit; }
+        form button { border: none; cursor: pointer; }
+        footer { background: #0f172a; color: white; text-align: center; padding: 30px 0; }
+        footer p { margin-bottom: 10px; }
+        .socials a { margin: 0 10px; color: #38bdf8; text-decoration: none; }
+        @keyframes fadeDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @media(max-width: 768px) {
+            nav ul { flex-direction: column; background: #0f172a; position: absolute; top: 70px; right: 0; width: 220px; display: none; padding: 20px 0; }
+            nav ul.show { display: block; }
+            nav ul li { margin: 15px 0; text-align: center; }
+            .menu-toggle { display: block; cursor: pointer; }
+        }
+        .menu-toggle { display: none; font-size: 1.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <h3>ISMAEL AGAO</h3>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Civil & Structural Engineer</h1>
+        <p>Designing safe, sustainable and innovative infrastructure solutions.</p>
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="cv.pdf" class="btn" download style="margin-left:15px;background:#22c55e;">Download CV</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I am a results-driven Civil and Structural Engineer with experience in structural analysis, construction supervision, and project coordination. I specialize in reinforced concrete and steel design, ensuring safety, efficiency, and compliance with engineering standards. My goal is to deliver durable infrastructure that positively impacts communities.</p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Structural Design</h3>
+                <p>Design of reinforced concrete and steel structures according to modern codes.</p>
+            </div>
+            <div class="card">
+                <h3>Project Management</h3>
+                <p>Comprehensive planning, scheduling, budgeting, and execution oversight.</p>
+            </div>
+            <div class="card">
+                <h3>Site Supervision</h3>
+                <p>Quality assurance, contractor coordination, and compliance inspections.</p>
+            </div>
+            <div class="card">
+                <h3>Structural Assessment</h3>
+                <p>Inspection and rehabilitation recommendations for existing structures.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Residential Project">
+                <h3>Residential Building</h3>
+                <p>Multi-storey residential structural design and supervision.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581091870627-3b5de7f3f3b5" alt="Water Project">
+                <h3>Water Infrastructure</h3>
+                <p>Design support for water supply and drainage systems.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="Commercial Project">
+                <h3>Commercial Complex</h3>
+                <p>Structural analysis and coordination of commercial development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/ismagagao@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 ISMAEL AGAO | Civil & Structural Engineer</p>
+    <div class="socials">
+        <a href="https://www.linkedin.com/in/agao-ismael-a61241309/">LinkedIn</a>
+        <a href="#">Email</a>
+        <a href="#">WhatsApp</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('show');
+    }
+</script>
+
+</body>
+</html>
