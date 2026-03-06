@@ -1,199 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ISMAEL AGAO - Professional Civil & Structural Engineer specializing in structural design, project management, and infrastructure development.">
-    <meta name="keywords" content="Civil Engineer, Structural Engineer, Structural Design, Construction, Project Management, Kenya Engineer">
-    <meta name="author" content="ISMAEL AGAO">
-    <title>YOBOZ CONSTRUCTION LTD  | Civil & Structural Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #1e293b; }
-        header { background: rgba(15, 23, 42, 0.95); color: white; padding: 20px 0; position: fixed; width: 100%; top: 0; z-index: 1000; backdrop-filter: blur(10px); }
-        .container { width: 90%; max-width: 1100px; margin: auto; }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        nav ul { list-style: none; display: flex; }
-        nav ul li { margin-left: 25px; }
-        nav ul li a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
-        nav ul li a:hover { color: #38bdf8; }
-        section { padding: 100px 0; }
-        .hero { background: linear-gradient(to right, #0f172a, #1e293b); color: white; text-align: center; padding-top: 150px; }
-        .hero h1 { font-size: 3rem; margin-bottom: 15px; animation: fadeDown 1s ease-in-out; }
-        .hero p { font-size: 1.2rem; margin-bottom: 25px; animation: fadeUp 1.2s ease-in-out; }
-        .btn { display: inline-block; padding: 12px 25px; background: #38bdf8; color: white; border-radius: 30px; text-decoration: none; font-weight: 500; transition: 0.3s; }
-        .btn:hover { background: #0ea5e9; transform: translateY(-3px); }
-        h2 { text-align: center; margin-bottom: 50px; font-size: 2.2rem; position: relative; }
-        h2::after { content: ""; width: 60px; height: 4px; background: #38bdf8; display: block; margin: 10px auto; border-radius: 5px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: #f8fafc; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.4s; }
-        .card:hover { transform: translateY(-10px); }
-        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
-        .gallery img{width:200px;margin:10px;cursor:pointer;}
-        #viewer{text-align:center;margin-top:20px;}
-        #bigImage{width:500px;}
-        form { max-width: 600px; margin: auto; }
-        form input, form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #cbd5e1; font-family: inherit; }
-        form button { border: none; cursor: pointer; }
-        footer { background: #0f172a; color: white; text-align: center; padding: 30px 0; }
-        footer p { margin-bottom: 10px; }
-        .socials a { margin: 0 10px; color: #38bdf8; text-decoration: none; }
-        @keyframes fadeDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        @media(max-width: 768px) {
-            nav ul { flex-direction: column; background: #0f172a; position: absolute; top: 70px; right: 0; width: 220px; display: none; padding: 20px 0; }
-            nav ul.show { display: block; }
-            nav ul li { margin: 15px 0; text-align: center; }
-            .menu-toggle { display: block; cursor: pointer; }
-        }
-        .menu-toggle { display: none; font-size: 1.8rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YOBOZ CONSTRUCTION LTD | Civil & Structural Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins;
+color:#1e293b;
+}
+
+header{
+background:#0f172a;
+color:white;
+position:fixed;
+width:100%;
+top:0;
+padding:18px 0;
+z-index:1000;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+section{
+padding:100px 0;
+}
+
+.hero{
+background:linear-gradient(#0f172a,#1e293b);
+color:white;
+text-align:center;
+padding-top:150px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+border-radius:30px;
+text-decoration:none;
+margin:8px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#f1f5f9;
+padding:25px;
+border-radius:12px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.gallery img{
+width:220px;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+#viewer{
+text-align:center;
+margin-top:40px;
+}
+
+#bigImage{
+max-width:600px;
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+#downloadBtn{
+display:inline-block;
+padding:10px 20px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:20px;
+}
+
+#viewer{
+text-align:center;
+margin-top:20px;
+}
+
+#bigImage{
+width:500px;
+max-width:100%;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.socials a{
+margin:0 10px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
-    <div class="container">
-        <nav>
-            <div style="display:flex;align-items:center;gap:10px;">
-                <img src="https://disabled-amaranth-feqrazqajc.edgeone.app/SmallSquareLogoJpg.png" alt="Logo" style="height:40px;">
-            </div>
+<div class="container">
 
-            <div style="display:flex;align-items:center;gap:12px;">
-                <img src="https://metropolitan-blush-uq3njzpykr.edgeone.app/Profile.jpg" alt="Profile" style="height:40px;width:40px;border-radius:50%;object-fit:cover;">
-                <span style="color:white;font-weight:600;">ISMAEL AGAO</span>
-            </div>
+<nav>
 
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            <ul id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<img src="logo.png" style="height:55px">
+
+<div style="display:flex;align-items:center;gap:10px;">
+<img src="profile.jpg" style="height:55px;width:55px;border-radius:50%">
+<span>ISMAEL AGAO</span>
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</div>
 </header>
 
 <section class="hero" id="home">
-    <div class="container">
-        <h1>Civil & Structural Engineer</h1>
-        <p>Designing safe, sustainable and innovative infrastructure solutions.</p>
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="#contact" class="btn" style="margin-left:10px;background:#f59e0b;">Book Consultation</a>
-        <a href="AGAOCV.pdf" class="btn" download style="margin-left:10px;background:#22c55e;">Download CV</a>
-    </div>
+<div class="container">
+
+<h1>Civil & Structural Engineer</h1>
+
+<p>Designing safe and sustainable infrastructure.</p>
+
+<a href="#contact" class="btn">Hire Me</a>
+<a href="#contact" class="btn">Book Consultation</a>
+<a href="AGAOCV.pdf" class="btn" download>Download CV</a>
+
+</div>
 </section>
 
 <section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am a results-driven Civil and Structural Engineer with experience in structural analysis, construction supervision, and project coordination. I specialize in reinforced concrete and steel design, ensuring safety, efficiency, and compliance with engineering standards. My goal is to deliver durable infrastructure that positively impacts communities.</p>
-    </div>
+<div class="container">
+
+<h2>About Me</h2>
+
+<p>
+I am a Civil & Structural Engineer experienced in structural analysis, construction supervision and project coordination.
+</p>
+
+</div>
 </section>
 
 <section id="services">
-    <div class="container">
-        <h2>Services</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Structural Design</h3>
-                <p>Design of reinforced concrete and steel structures according to modern codes.</p>
-            </div>
-            <div class="card">
-                <h3>Project Management</h3>
-                <p>Comprehensive planning, scheduling, budgeting, and execution oversight.</p>
-            </div>
-            <div class="card">
-                <h3>Site Supervision</h3>
-                <p>Quality assurance, contractor coordination, and compliance inspections.</p>
-            </div>
-            <div class="card">
-                <h3>Structural Assessment</h3>
-                <p>Inspection and rehabilitation recommendations for existing structures.</p>
-            </div>
-        </div>
-    </div>
+
+<div class="container">
+
+<h2>Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Structural Design</h3>
+<p>Concrete and steel structural design.</p>
+</div>
+
+<div class="card">
+<h3>Project Management</h3>
+<p>Planning and execution of engineering projects.</p>
+</div>
+
+<div class="card">
+<h3>Site Supervision</h3>
+<p>Quality control and construction inspection.</p>
+</div>
+
+<div class="card">
+<h3>Structural Assessment</h3>
+<p>Inspection and strengthening recommendations.</p>
+</div>
+
+</div>
+</div>
 </section>
 
 <section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://socialist-silver-us5bfzcolx.edgeone.app/high%20rise%20residential%20building.jpg" alt="Residential Project">
-                <h3>Residential Building</h3>
-                <p>Multi-storey residential structural design and supervision.</p>
-            </div>
-            <div class="card">
-                <img src="https://generous-rose-dbhv1clvwf.edgeone.app/dam.jpg" alt="Water Project">
-                <h3>Water Infrastructure</h3>
-                <p>Design support for water supply and drainage systems.</p>
-            </div>
-            <div class="card">
-                <img src="https://glad-harlequin-roio4uqlil.edgeone.app/3D%20Floor%20Plan%20Apps.jpg" alt="Commercial Project">
-                <h3>Commercial Complex</h3>
-                <p>Structural analysis and coordination of commercial development.</p>
-            </div>
-            <div class="gallery">
-                <img src="https://exuberant-fuchsia-q1xbtaouyx.edgeone.app/interior1.jpg" onclick="showImage(this.src)">
-                <img src="https://exact-coral-qpqrqk8xe5.edgeone.app/Pinterest.jpg" onclick="showImage(this.src)">
-                <img src="https://biological-aquamarine-qozhwun8hb.edgeone.app/Exterior.jpg" onclick="showImage(this.src)">
-                <img src="https://romantic-sapphire-bvo20bb5ty.edgeone.app/Pinterest.jpg" onclick="showImage(this.src)">
-            </div>
-            <div id="viewer">
-                <img id="bigImage">
-                <a id="downloadBtn" download>Download</a>
-                 <h3>Gallery</h3>
-                 <p>See Our Work</p>
-            </div>
-        </div>
-    </div>
+
+<div class="container">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="project1.jpg">
+<h3>Residential Building</h3>
+<p>Multi-storey residential building.</p>
+</div>
+
+<div class="card">
+<img src="project2.jpg">
+<h3>Water Infrastructure</h3>
+<p>Water supply system design.</p>
+</div>
+
+<div class="card">
+<img src="project3.jpg">
+<h3>Commercial Complex</h3>
+<p>Structural design for commercial development.</p>
+</div>
+
+</div>
+
+<div class="gallery">
+
+<img src="interior1.jpg" alt="Interior Design" onclick="showImage(this.src)">
+<img src="pinterest.jpg" alt="Design Plan" onclick="showImage(this.src)">
+<img src="exterior.jpg" alt="Exterior Building" onclick="showImage(this.src)">
+<img src="bim.jpg" alt="BIM Model" onclick="showImage(this.src)">
+<img src="project5.jpg" alt="Construction Work" onclick="showImage(this.src)">
+<img src="project6.jpg" alt="Structural Layout" onclick="showImage(this.src)">
+
+</div>
+
+<div id="viewer">
+
+<h3>Project Gallery</h3>
+<p>Click an image to preview and download</p>
+
+<img id="bigImage">
+
+<br>
+
+<a id="downloadBtn" download>Download Image</a>
+
+</div>
+
+</div>
+</section>
+
+<!-- GOOGLE REVIEWS SECTION -->
+
+<section id="reviews">
+
+<div class="container">
+
+<h2>Client Reviews</h2>
+
+<p style="text-align:center;margin-bottom:20px;">
+See what clients say about our engineering services
+</p>
+
+<iframe
+src="https://maps.google.com/maps?q=YOBOZ%20CONSTRUCTION%20LTD%20Nairobi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350"
+style="border:0;">
+</iframe>
+
+<div style="text-align:center;margin-top:25px">
+
+<a href="https://search.google.com/local/writereview?placeid=" class="btn" target="_blank">
+
+Leave a Google Review
+
+</a>
+
+</div>
+
+</div>
 </section>
 
 <section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <form action="https://formsubmit.co/ismagagao@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button class="btn" type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
 
-<section id="rate">
-    <div class="container">
-        <h2>Rate My Work</h2>
-        <p style="text-align:center;margin-bottom:20px;">Your feedback helps improve my engineering services.</p>
-        <div style="text-align:center;font-size:30px;">
-            ⭐ ⭐ ⭐ ⭐ ⭐
-        </div>
-        <div style="text-align:center;margin-top:25px;">
-            <a href="https://g.page/r/Cd81Yq6iXZC4EAI/review" 
-               class="btn" 
-               target="_blank">
-               Leave a Google Review
-            </a>
-        </div>
-    </div>
+<div class="container">
+
+<h2>Contact</h2>
+
+<form action="https://formsubmit.co/ismagagao@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" rows="5" placeholder="Your Message"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+</div>
 </section>
 
 <footer>
-    <p>© 2026 YOBOZ CONSTRUCTION LTD | Civil & Structural Engineer</p>
-    <div class="socials">
-        <a href="https://www.linkedin.com/in/agao-ismael-a61241309/">LinkedIn</a>
-        <a href="mailto:ismagagao@gmail.com">Email</a>
-        <a href="https://wa.me/254110297241">WhatsApp</a>
-    </div>
+
+<p>© 2026 YOBOZ CONSTRUCTION LTD</p>
+
+<p>Nairobi, Kenya</p>
+
+<p>Email: ismagagao@gmail.com</p>
+
+<p>Phone: +254 110 297241</p>
+
+<div class="socials">
+
+<a href="https://www.linkedin.com/">LinkedIn</a>
+
+<a href="mailto:ismagagao@gmail.com">Email</a>
+
+<a href="https://wa.me/254110297241">WhatsApp</a>
+
+</div>
+
 </footer>
 
 <script>
-    function toggleMenu() {
-        document.getElementById('nav-links').classList.toggle('show');
-    }
+
+function showImage(src){
+
+document.getElementById("bigImage").src = src;
+
+document.getElementById("downloadBtn").href = src;
+
+}
+
+<script>
+
+function showImage(src){
+
+document.getElementById("bigImage").src = src;
+
+document.getElementById("downloadBtn").href = src;
+
+}
+
 </script>
 
 </body>
